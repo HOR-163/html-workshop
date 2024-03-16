@@ -18,6 +18,7 @@
     <img id="photo" src="images/assembly_hello_world.png">
 </div>
 
+
 <!-- Lõbusad faktid -->
 
 <div class="container">
@@ -37,7 +38,7 @@
 
     </div>
 </div>
-
+<script src="script.js"> </script>
 <!-- Video -->
 
 <div class="container" style="flex-flow: column">
@@ -63,5 +64,21 @@
 </div>
 
 </body>
-
+<script>
+    let elementsArray = document.querySelectorAll(".container");
+    console.log(elementsArray);
+    window.addEventListener('scroll', fadeIn );
+    function fadeIn() {
+        for (var i = 0; i < elementsArray.length; i++) {
+            var elem = elementsArray[i]
+            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+            if (distInView < 0) {
+                elem.classList.add("inView");
+            } else {
+                elem.classList.remove("inView");
+            }
+        }
+    }
+    fadeIn();
+</script>
 </html>

@@ -21,6 +21,11 @@ body {
     align-items: center;
     gap: 3em;
     justify-content: center;
+    transform: translateY(50px) rotate(-5deg) translateZ(0);
+    transition-delay: .3s;
+    transition: .4s;
+    opacity: 0;
+    filter: grayscale(1);
 }
 
 #textBox {
@@ -38,18 +43,12 @@ body {
     color: white;
     background-color: RGB(48,48,48);
     padding: 5em 1.5em 1.5em;
+
 }
 
-.bottom-right.inView {
-    opacity: 1;
-    transform: translateY(0px) rotate(0deg) translateZ(0);
-}
 .inView {
     opacity: 1;
     transform: translateY(0px) rotate(0deg) translateZ(0);
-}
-section {
-    padding:20px;
 }
 
 .icon {
