@@ -1,83 +1,140 @@
 <html lang="et">
 
 <head>
-    <meta charset="UTF-8">    <!-- Tähestik, mida kasutame  -->
-    <link rel="stylesheet" type="text/css" href="style.css"/> <!-- Ühendus CSS-i ja meie lehe vahel -->
+    <meta charset="UTF-8"> <!-- Tähestik, mida kasutame  -->
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!-- Ühendus CSS-i ja meie lehe vahel -->
     <title>Assembly</title> <!-- Veebilehe pealkiri, mida näidatakse brauseri tab-is -->
 </head>
 
 <body>
 
-<!-- Pealkiri, pilt ja väike kirjeldus -->
+    <!-- Pealkiri, pilt ja väike kirjeldus -->
 
-<div class="container" style="padding: 1em">
-    <div id="textBox">
-        <h1>Assembly</h1>
-        <p>Assembly is a hard language, however if mastered it could be a good source for low-level engineering. The most useful part of assembly is the fact, that everything you write, is going to run basically the same as you wrote it. The compilers don't really change your code too much and the code you write is basically the same after decompilation. Moreover it is very efficient if written correctly.</p>
+    <div class="container" style="padding: +em; max-width:50em">
+        <div id="textBox">
+            <h1>Assembly</h1>
+            <p>Assembly is a hard language, however if mastered it could be a good source for low-level engineering. The
+                most useful part of assembly is the fact, that everything you write, is going to run basically the same
+                as you wrote it. The compilers don't really change your code too much and the code you write is
+                basically the same after decompilation. Moreover it is very efficient if written correctly.</p>
+        </div>
     </div>
-    <img id="photo" src="images/assembly_hello_world.png">
-</div>
+    <img class="container" id="photo" src="images/assembly_hello_world.png">
 
 
-<!-- Lõbusad faktid -->
+    <!-- Lõbusad faktid -->
 
-<div class="container">
-    <div class="card">
-        <!-- Tee see osa ise! -->
-        <h1>Did you know, that... </h1>
-        <p>assembly is so hard, that even brainfuck developers will want to die before writing a single line of code</p>
-        <img class="icon" src="images/brainfuck.jpg"/>
+    <div class="container2">
+        <div class="container">
+            <div class="card">
+                <!-- Tee see osa ise! -->
+                <h1>Did you know, that... </h1>
+                <p>assembly is so hard, that even brainfuck developers will want to die before writing a single line of
+                    code
+                </p>
+                <img class="icon" src="images/brainfuck.jpg" />
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <!-- Tee see osa ise! -->
+                <p>Assembly language is actually the oldest and most fundamental programming language. It existed even
+                    before computers themselves, developed in the 1940s alongside the very first electronic computers.
+                    Since
+                    computers only understand ones and zeros, assembly provides a way to write instructions that
+                    directly
+                    correspond to these basic operations, making it the most bare-bones language for interacting with a
+                    computer's hardware. </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h1>Did you know, that...</h1>
+                <p>unlike higher-level languages that can be used on many different computers, assembly language
+                    instructions are tailored to the specific architecture of the processor it's written for. This means
+                    assembly code for an Intel processor won't work on an AMD processor, and vice versa. This tight
+                    connection gives assembly programmers fine-grained control over the hardware, but also makes it less
+                    portable.</p>
+            </div>
+        </div>
     </div>
-    <div class="card">
-        <!-- Tee see osa ise! -->
-        <p>Assembly language is actually the oldest and most fundamental programming language. It existed even before computers themselves, developed in the 1940s alongside the very first electronic computers.  Since computers only understand ones and zeros, assembly provides a way to write instructions that directly correspond to these basic operations, making it the most bare-bones language for interacting with a computer's hardware. </p>
-    </div>
-    <div class="card">
-        <h1>Did you know, that...</h1>
-        <p>unlike higher-level languages that can be used on many different computers, assembly language instructions are tailored to the specific architecture of the processor it's written for. This means assembly code for an Intel processor won't work on an AMD processor, and vice versa. This tight connection gives assembly programmers fine-grained control over the hardware, but also makes it less portable.</p>
 
-    </div>
-</div>
-<script src="script.js"> </script>
-<!-- Video -->
+    <!-- Video -->
 
-<div class="container" style="flex-flow: column">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/4gwYkEK0gOk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+    <div class="container" style="flex-flow: column">
+        <iframe src="https://www.youtube.com/embed/4gwYkEK0gOk" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
     <!-- max-width paneb ette piiri, et kui pikk võib tekst olla -->
-<div class="container"> 
-    <h2>Delving into Assembly Language: A Programmer's Bridge to the Machine</h2>
-</div>
-<div class="container">
-    <p style="max-width: 55em">LAssembly language occupies a unique space in the programming realm. Unlike high-level languages that provide a layer of abstraction from the underlying hardware, assembly offers a direct window into the world of machine code, the language computers truly comprehend. This summary dives into the essence of assembly language, exploring its characteristics, applications, and considerations for learning.</p>
-</div>
-<div class="container">
-    <h2>Unveiling the Machine's Language</h2>
-    <p style="max-width: 55em">Imagine a computer processor as a complex machine with a specific set of instructions it can execute. These instructions, forming the machine code, are a series of binary digits (0s and 1s) that dictate various operations the processor performs. While functional, machine code is cryptic and virtually impossible for humans to read and write efficiently. Here's where assembly language steps in. It acts as an intermediary, offering a more human-readable representation of machine code instructions. Assembly language utilizes mnemonics, which are easy-to-remember abbreviations corresponding to actual machine code operations. For instance, the instruction "ADD" in assembly might translate to a specific binary code that tells the processor to add two values.
 
-    However, assembly language isn't simply a prettier version of machine code. It provides programmers with granular control over how the processor interacts with memory and other hardware components. This fine-tuned interaction allows for optimizations that high-level languages with their layers of abstraction might struggle to achieve. This control translates to programs that can be exceptionally efficient and squeeze maximum performance out of the hardware.</p>
-</div>
 
-<!-- Lisainfo -->
 
-<div>
-    <h1>More information</h1>
+
     <div class="container">
-        <p style="max-width: 55em">All of your organs will be sold if you don't accept cookies. </p>
+        <div id="textBox">
+            <h2>Delving into Assembly Language: A Programmer's Bridge to the Machine</h2>
+            <p style="max-width: 55em">Assembly language occupies a unique space in the programming realm. Unlike
+                high-level
+                languages that provide a layer of abstraction from the underlying hardware, assembly offers a direct
+                window
+                into the world of machine code, the language computers truly comprehend. This summary dives into the
+                essence
+                of assembly language, exploring its characteristics, applications, and considerations for learning.</p>
+        </div>
     </div>
-    <img src="images/cookie monster.gif" >
-    <p>Assembly language professional help fund © 2024</p>
-</div>
+
+
+
+    <div class="container">
+        <div id="textBox">
+            <h2>Unveiling the Machine's Language</h2>
+            <p style="max-width: 55em">Imagine a computer processor as a complex machine with a specific set of
+                instructions
+                it can execute. These instructions, forming the machine code, are a series of binary digits (0s and 1s)
+                that
+                dictate various operations the processor performs. While functional, machine code is cryptic and
+                virtually
+                impossible for humans to read and write efficiently. Here's where assembly language steps in. It acts as
+                an
+                intermediary, offering a more human-readable representation of machine code instructions. Assembly
+                language
+                utilizes mnemonics, which are easy-to-remember abbreviations corresponding to actual machine code
+                operations. For instance, the instruction "ADD" in assembly might translate to a specific binary code
+                that
+                tells the processor to add two values.
+
+                However, assembly language isn't simply a prettier version of machine code. It provides programmers with
+                granular control over how the processor interacts with memory and other hardware components. This
+                fine-tuned
+                interaction allows for optimizations that high-level languages with their layers of abstraction might
+                struggle to achieve. This control translates to programs that can be exceptionally efficient and squeeze
+                maximum performance out of the hardware.</p>
+        </div>
+    </div>
+
+    <!-- Lisainfo -->
+    <div class="container">
+        <div id="textBox">
+            <h1>More information</h1>
+            <p style="max-width: 55em">All of your organs will be sold if you don't accept cookies. </p>
+        </div>
+    </div>
+    <div id="textBox">
+        <img src="images/cookie monster.gif">
+        <p>Assembly language professional help fund © 2024</p>
+    </div>
 
 </body>
-<script>
+<script src="scroll_animation.js"> </script>
+<!-- <script>
     let elementsArray = document.querySelectorAll(".container");
     console.log(elementsArray);
-    window.addEventListener('scroll', fadeIn );
+    window.addEventListener('scroll', fadeIn);
     function fadeIn() {
         for (var i = 0; i < elementsArray.length; i++) {
             var elem = elementsArray[i]
-            var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+            var distInView = elem.getBoundingClientRect().top - window.innerHeight / 2;
             if (distInView < 0) {
                 elem.classList.add("inView");
             } else {
@@ -86,5 +143,6 @@
         }
     }
     fadeIn();
-</script>
+</script> -->
+
 </html>

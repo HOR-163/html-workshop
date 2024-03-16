@@ -28,6 +28,12 @@ body {
 
 }
 
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #textBox {
     max-height: 25em;
     overflow-x: hidden;
@@ -69,4 +75,20 @@ button {
 button:hover {
     background-color: #C8C6C6;
     cursor: pointer;
+}
+
+.title {
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    gap: 3; /* vahe elementide vahel */
+    align-items: center;
+    color: limegreen;
+    background-color: black;
+    font-family: "consolas";
+    justify-content: center;
+    transform: translateY(50px) rotate(-5deg) translateZ(0);
+    transition-delay: .3s;
+    transition: .4s;
+    opacity: 0;
 }
